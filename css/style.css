@@ -677,16 +677,17 @@ a.socialicon.dribbble:hover {
 	margin-left: 60px;
 }
 .servicesitem p {
-  margin-top: 225px;
+  margin-left: 250px;
+  margin-top: 20px;
 }
 .servicesitem {
   position: relative;
-	width: 200px;
-	height: 200px;
+	width: 80%;
 	display: inline-block;
 	cursor: pointer;
 	margin-left: 190px;
   margin-top: 10px;
+  margin-bottom: 50px;
 }
 .servicesitem .front, .servicesitem .back {
 	width: 200px;
@@ -705,7 +706,7 @@ a.socialicon.dribbble:hover {
 	transition: opacity 600ms ease;
 	background-color: #16a085;
 }
-.servicesitem:hover .front {
+.front:hover {
 	opacity: 0;
 }
 .back {
