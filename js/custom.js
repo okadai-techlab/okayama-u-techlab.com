@@ -100,6 +100,7 @@ $(document).ready(function() {
 		}
 	);
 
+  /*
 	// Services Icon Hover
 	var original_text = $('p#services').text();
 	var services_p = $('p#services');
@@ -112,6 +113,7 @@ $(document).ready(function() {
 			$(services_p).fadeOut(200,function(){ $(services_p).text(original_text).fadeIn(200); });
 		}
 	);
+  */
 
 	// Testimonials Icon Hover
 	var original_t_text = $('p#testimonials').text();

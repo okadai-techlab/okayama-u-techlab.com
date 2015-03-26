@@ -60,15 +60,15 @@ html, body {
 	Text Selection Styles
 ******************************************************************/
 ::selection {
-	background: #6093e7;
+	background: #16a085;
 	color: #fff;
 }
 ::-moz-selection {
-	background: #6093e7;
+	background: #16a085;
 	color: #fff;
 }
 ::-webkit-selection {
-	background: #6093e7;
+	background: #16a085;
 	color: #fff;
 }
 a {
@@ -85,7 +85,7 @@ a {
 	color: #616161;
 }
 a:hover {
-	color: #6093e7;
+	color: #16a085;
 }
 b {
 	font-weight: bold;
@@ -98,10 +98,10 @@ p {
 }
 h1 {
 	font-family: "Open Sans", Verdana, Arial, sans-serif;
-	line-height: 1.6em;
+	line-height: 1.0em;
 	color: #454544;
 	text-decoration: none;
-	font-size: 40px;
+	font-size: 84px;
 }
 h2 {
 	font-family: "Open Sans", Verdana, Arial, sans-serif;
@@ -161,7 +161,7 @@ h6 {
 	color: #FFF;
 }
 .color {
-	color: #6093e7;
+	color: #16a085;
 }
 .dark-gray {
 	color: #4b4b4b;
@@ -194,7 +194,7 @@ h6 {
 }
 blockquote {
 	font-family: "Open Sans", Verdana, Arial, sans-serif;
-	font-size: 28px;
+	font-size: 17px;
 	line-height: 60px;
 	width: 100%;
 	background-color: #f6f6f6;
@@ -206,18 +206,18 @@ blockquote {
 	font-style: italic;
 }
 blockquote:before {
-	content: '"';
+	content: '';
 	font-weight: bold;
 	font-size: 36px;
 }
 blockquote:after {
-	content: '"';
+	content: '';
 	font-weight: bold;
 	font-size: 36px;
 }
 div.pagetitle {
 	width: 100%;
-	background-color: #6093e7;
+	background-color: #16a085;
 	height: 120px;
 }
 div.pagetitle h1 {
@@ -234,18 +234,18 @@ p.main {
 div.section.divider {
 	width: 100%;
 	height: 40px;
-	border-top: 1px solid #6093e7;
+	border-top: 1px solid #16a085;
 	text-align: center;
 	margin-top: 100px;
 	margin-bottom: 40px;
 }
 div.section.divider.single {
-	border-top: 1px solid #6093e7;
+	border-top: 1px solid #16a085;
 	margin-top: 150px;
 }
 div.section.divider h2 {
 	font-weight: 400;
-	color: #6093e7;
+	color: #16a085;
 	background-color: #FFF;
 	margin-top: -20px;
 	width: 300px;
@@ -261,6 +261,9 @@ a.scroll {
 div.icon {
 	font-size: 80px;
 	color: #FFF;
+}
+.front {
+  background-size: 200px;
 }
 .front div.icon {
 	line-height: 210px;
@@ -296,8 +299,16 @@ div.icon {
 .herowrapper h1 {
 	text-align: center;
 	color: #FFF;
-	font-size: 40px;
+	font-size: 55px;
 	font-weight: 300;
+  font-style: bold;
+}
+.herowrapper h2 {
+	text-align: center;
+	color: #FFF;
+	font-size: 20px;
+	font-weight: 300;
+  margin-top: 30px;
 }
 .herowrapper b {
 	background-color: rgba(255, 255, 255, 0.8);
@@ -394,11 +405,11 @@ ul.mainmenu li a {
 	transition: color 400ms ease;
 }
 ul.mainmenu li:hover a {
-	color: #6093e7;
+	color: #16a085;
 }
 ul.mainmenu li.active a {
 	font-weight: bold;
-	color: #6093e7;
+	color: #16a085;
 }
 
 /******************************************************************
@@ -409,7 +420,7 @@ ul.mainmenu li.active a {
 	height: 20px;
 	background-image: url(../img/carouselcontrols.png);
 	background-repeat: no-repeat;
-	background-color: #6093e7;
+	background-color: #16a085;
 	cursor: pointer;
 	position: absolute;
 }
@@ -516,7 +527,7 @@ div.section.block .hover.content {
 	display: block;
 	background-color: rgba(96, 147, 231, 0.6);
 	z-index: 10;
-	border-bottom: 3px solid #6093e7;
+	border-bottom: 3px solid #16a085;
 	margin-top: 0px;
 }
 div.section.block .hover.content h2 {
@@ -572,6 +583,10 @@ div.section.block.blog .hover a.readmore {
 /******************************************************************
 	About Us
 ******************************************************************/
+#introduction-paragraph {
+  padding: 30px;
+  background-color: #f6f6f6;
+}
 div.person {
 	width: 920px;
 	margin: 20px auto;
@@ -655,21 +670,23 @@ a.socialicon.dribbble:hover {
 }
 
 /******************************************************************
-	Services
+	Services -> Members
 ******************************************************************/
 .servicesitem img {
 	margin-top: 60px;
 	margin-left: 60px;
 }
 .servicesitem p {
-	display: none;
+  margin-top: 225px;
 }
 .servicesitem {
+  position: relative;
 	width: 200px;
 	height: 200px;
 	display: inline-block;
 	cursor: pointer;
-	margin-left: 30px;
+	margin-left: 190px;
+  margin-top: 10px;
 }
 .servicesitem .front, .servicesitem .back {
 	width: 200px;
@@ -686,7 +703,7 @@ a.socialicon.dribbble:hover {
 	-o-transition: opacity 600ms ease;
 	-ms-transition: opacity 600ms ease;
 	transition: opacity 600ms ease;
-	background-color: #6093e7;
+	background-color: #16a085;
 }
 .servicesitem:hover .front {
 	opacity: 0;
@@ -699,7 +716,7 @@ a.socialicon.dribbble:hover {
 	text-transform: uppercase;
 	font-weight: 400;
 	line-height: 200px;
-	color: #6093e7;
+	color: #16a085;
 	text-align: center;
 }
 
@@ -727,11 +744,11 @@ li.filter {
 	margin: 0px 5px;
 }
 li.filter:hover {
-	color: #6093e7;
+	color: #16a085;
 }
 li.filter.active {
 	font-weight: 700;
-	background-color: #6093e7;
+	background-color: #16a085;
 	color: #FFF;
 }
 ul.portfolio li {
@@ -769,7 +786,7 @@ ul.portfolio li {
 	width: 100%;
 	text-align: center;
 }
-.portfoliohover h1 {
+.portfoliohover p {
 	color: #FFF;
 	font-size: 150px;
 	font-weight: 300;
@@ -789,7 +806,7 @@ ul.portfolio li {
 	font-weight: 300;
 }
 ul.portfolio li:hover .portfoliohover {
-	background-color: #6093e7;
+	background-color: #16a085;
 }
 ul.portfolio li:hover .portfoliohover h5, ul.portfolio li:hover .portfoliohover h6, ul.portfolio li:hover .portfoliohover h1 {
 	opacity: 1;
@@ -839,7 +856,7 @@ article.post .hover:hover div.posthover {
 	opacity: 1;
 }
 article.post .hover:hover div.postinfo {
-	background-color: #6093e7;
+	background-color: #16a085;
 }
 article.post .hover:hover div.postinfo h6, article.post .hover:hover div.postinfo b {
 	color: #FFF;
@@ -909,7 +926,7 @@ input {
 	font-size: 18px;
 	width: 500px;
 	height: 50px;
-	border: 1px solid #6093e7;
+	border: 1px solid #16a085;
 	outline: none;
 	border-radius: 3px;
 	margin-bottom: 20px;
@@ -920,7 +937,7 @@ textarea {
 	height: 200px;
 	font-size: 18px;
 	width: 500px;
-	border: 1px solid #6093e7;
+	border: 1px solid #16a085;
 	outline: none;
 	border-radius: 3px;
 	margin-bottom: 20px;
@@ -936,7 +953,7 @@ textarea {
 	height: 50px;
 	text-align: center;
 	line-height: 50px;
-	background-color: #6093e7;
+	background-color: #16a085;
 }
 .footer h6 {
 	line-height: 50px;
