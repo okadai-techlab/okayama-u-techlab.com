@@ -192,28 +192,20 @@ h6 {
 	width: 300px;
 	float: right;
 }
-blockquote {
-	font-family: "Open Sans", Verdana, Arial, sans-serif;
-	font-size: 17px;
-	line-height: 60px;
+.blockquote {
+  padding-top: 40px;
+  padding-bottom: 40px;
 	width: 100%;
 	background-color: #f6f6f6;
 	height: 100px;
+}
+.blockquote p {
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	font-size: 17px;
 	text-align: center;
-	padding-top: 40px;
 	color: #616161;
 	font-weight: 300;
 	font-style: italic;
-}
-blockquote:before {
-	content: '';
-	font-weight: bold;
-	font-size: 36px;
-}
-blockquote:after {
-	content: '';
-	font-weight: bold;
-	font-size: 36px;
 }
 div.pagetitle {
 	width: 100%;
@@ -685,9 +677,8 @@ a.socialicon.dribbble:hover {
 	width: 80%;
 	display: inline-block;
 	cursor: pointer;
-	margin-left: 190px;
   margin-top: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 .servicesitem .front, .servicesitem .back {
 	width: 200px;
@@ -813,6 +804,17 @@ ul.portfolio li:hover .portfoliohover h5, ul.portfolio li:hover .portfoliohover 
 	opacity: 1;
 	color: #FFF;
 }
+.portfoliohover h1 {
+  font-size: 15px;
+  margin-bottom: 50px;
+  margin-right: 15px;
+  margin-left: 15px;
+  visibility: hidden;
+}
+.portfoliohover:hover h1 {
+  visibility: visible;
+}
+
 /******************************************************************
 	Blog
 ******************************************************************/
@@ -925,7 +927,7 @@ article.post p {
 input {
 	line-height: 50px;
 	font-size: 18px;
-	width: 500px;
+	width: 80%;
 	height: 50px;
 	border: 1px solid #16a085;
 	outline: none;
@@ -937,7 +939,7 @@ textarea {
 	line-height: 50px;
 	height: 200px;
 	font-size: 18px;
-	width: 500px;
+	width: 80%;
 	border: 1px solid #16a085;
 	outline: none;
 	border-radius: 3px;
