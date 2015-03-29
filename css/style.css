@@ -645,6 +645,9 @@ a.socialicon.dribbble:hover {
 /******************************************************************
 	Services -> Members
 ******************************************************************/
+.item-wrapper {
+  display: table;
+}
 .servicesitem img {
 	margin-top: 60px;
 	margin-left: 60px;
@@ -656,7 +659,7 @@ a.socialicon.dribbble:hover {
 .servicesitem {
   position: relative;
 	width: 80%;
-	display: inline-block;
+	display: inline-block; 
 	cursor: pointer;
   margin-top: 10px;
   margin-bottom: 80px;
