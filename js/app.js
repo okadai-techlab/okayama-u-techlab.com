@@ -4,6 +4,16 @@
 /* config dom id */
 //particlesJS('dom-id');
 
+// if smartphone..
+if ((navigator.userAgent.indexOf('iPhone') > 0 && 
+     navigator.userAgent.indexOf('iPad') == -1) || 
+     navigator.userAgent.indexOf('iPod') > 0 || 
+     navigator.userAgent.indexOf('Android') > 0) {
+  nb = 50;
+} else {
+  nb = 150;
+}
+
 /* config dom id (optional) + config particles params */
 particlesJS('particles-js', {
   particles: {
@@ -21,7 +31,7 @@ particlesJS('particles-js', {
     },
     size: 4,
     size_random: true,
-    nb: 150,
+    nb: nb,
     line_linked: {
       enable_auto: true,
       distance: 100,
