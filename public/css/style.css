@@ -953,6 +953,27 @@ textarea {
 	margin-bottom: 20px;
 	text-align: center;
 }
+.send-btn {
+  display: inline-block;
+  width: 50%;
+  height: 23px;
+  color: #FFF;
+  font-size: 20px;
+  background-color: #16a085;
+  border: 1px solid #fff;
+  border-color: #16a085;
+  border-radius: 3px;
+  margin: 0 auto;
+  padding: 10px;
+  outline: none;
+  text-decoration: none;
+  text-align: center;
+}
+.send-btn:hover {
+  background-color: #fff;
+  border-color: #16a085;
+}
+  
 
 /******************************************************************
 	Footer

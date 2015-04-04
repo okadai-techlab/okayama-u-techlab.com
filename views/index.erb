@@ -260,17 +260,20 @@
 	<div class="content contact cf">
 
 		<!-- Start Main Paragraph -->
-		<p class="main dark-gray">お気軽にご連絡ください！</p>
-		<!-- Start Main Paragraph -->
-		
-		<label>Name</label><br>
-		<input type="text" value="" class="form"><br>
-		
-		<label>Email</label><br>
-		<input type="text" value="" class="form"><br>
-		
-		<label>Message</label><br>
-		<textarea rows="3" class="form"></textarea>
+    <p class="main dark-gray">お気軽にご連絡ください！</p>
+
+    <form action="/" method="post" class="contact_forms">	
+      <label>Name</label><br>
+      <input type="text" class="form" name="name"><br>
+      
+      <label>Email</label><br>
+      <input type="text" class="form" name="email"><br>
+      
+      <label>Message</label><br>
+      <textarea rows="3" class="form" name="message"></textarea>
+
+      <a href="/" onclick="form.submit();" class="form send-btn">Send</a>
+    </form>
 
 	</div>
 	<!-- End Content -->
