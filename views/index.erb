@@ -1,26 +1,36 @@
-<!doctype html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-<title>岡山大学テクノロジーラボ | 岡山大学テクノロジーラボは、IT技術やデザインに興味のある大学生が集うサークルです</title>
-<link rel="icon" type="img/png" href="img/favicon.png">
-<!-- Load CSS -->
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-<!-- Load Icon Font -->
-<link href="css/webfont.css" rel="stylesheet" type="text/css" />
-<!-- Load jQuery library -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<!-- Load jCarousel js -->
-<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
-<!-- Load MixItUup js -->
-<script type="text/javascript" src="js/jquery.mixitup.js"></script>
-<!-- Load js -->
-<script type="text/javascript" src="js/custom.js"></script>
-</head>
-<!-- Start Body -->
-<body>
-	<!-- Start Menu -->
+<% if @isSuccessSendingEmail %>
+<script type="text/javascript">
+$(function(){
+  PNotify.prototype.options.delay -= 6000;
+
+  new PNotify({
+    title: "メッセージを送信しました",
+    text: "ご連絡ありがとうございます！",
+    nonblock: {
+        nonblock: true,
+        nonblock_opacity: .1
+    },
+    type: 'success'
+  })
+});
+<% elsif @isSuccessSendingEmail == false %>
+<script type="text/javascript">
+$(function(){
+  PNotify.prototype.options.delay -= 6000;
+
+  new PNotify({
+    title: "メッセージを送信できませんでした...",
+    text: "ごめんなさい。。。正しいメールアドレスを入力してください。",
+    nonblock: {
+        nonblock: true,
+        nonblock_opacity: .1
+    },
+    type: 'error'
+  })
+});
+<% end %>
+</script>
+<!-- Start Menu -->
 	<div class="menubar" data-scroll="true">
     <a href="#"><img src="img/logo.jpg" class="logo"></a>
 		<ul class="mainmenu">
@@ -272,7 +282,24 @@
       <label>Message</label><br>
       <textarea rows="3" class="form" name="message"></textarea>
 
-      <button type="submit" method="post" class="send-btn">Send</button>
+      <script type="text/javascript">
+function SendButtonClick() {
+}
+      </script>
+
+<script>
+// メールアドレスかどうかチェックする
+function checkMailAddress() {
+  ml = /.+@.+\..+/; // チェック方式
+  mf = document.nForm.email.value;
+  if(!mf.match(ml)) {
+    alert("メールアドレスが不正です");
+    return false;
+  }
+  return true;
+}
+</SCRIPT>
+      <button type="submit" method="post" class="send-btn" id="contactSendButton">Send</button>
     </form>
 
 	</div>
@@ -280,8 +307,4 @@
 	
 	<footer class="footer">
 		<h6>© Copyright 2015 | 岡山大学テクノロジーラボ</h6>
-	</footer>
-
-</body>
-<!-- End Body -->
-</html>
+  </footer>
