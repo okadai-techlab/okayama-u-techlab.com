@@ -287,19 +287,14 @@ function SendButtonClick() {
 }
       </script>
 
-<script>
-// メールアドレスかどうかチェックする
-function checkMailAddress() {
-  ml = /.+@.+\..+/; // チェック方式
-  mf = document.nForm.email.value;
-  if(!mf.match(ml)) {
-    alert("メールアドレスが不正です");
-    return false;
-  }
-  return true;
+      <script>
+// ボタンの表示を'Send'から'Sending...'に変更
+function contactSendButtonPush() {
+  var text = document.getElementById('contactSendButton');
+  text.innerText = "Sending...";
 }
 </SCRIPT>
-      <button type="submit" method="post" class="send-btn" id="contactSendButton">Send</button>
+      <button type="submit" method="post" class="send-btn" id="contactSendButton" onclick="contactSendButtonPush()">Send</button>
     </form>
 
 	</div>
