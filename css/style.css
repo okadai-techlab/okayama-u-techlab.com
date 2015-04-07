@@ -362,9 +362,16 @@ a.scrolldown {
 img.logo {
 	float: left;
 	display: block;
-	width: 120px;
+	width: 75px;
 	height: 75px;
 	margin: 0px 0px 0px 40px;
+}
+img.logo-text {
+	float: left;
+	display: block;
+	width: 160px;
+	height: 50px;
+  margin-top: 12px;
 }
 ul.mainmenu {
 	font-family: "Open Sans", Verdana, Arial, sans-serif;
