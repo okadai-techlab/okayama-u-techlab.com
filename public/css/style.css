@@ -960,6 +960,34 @@ textarea {
 	margin-bottom: 20px;
 	text-align: center;
 }
+.send-btn {
+  width: 50%;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  font-size: 1.25em;
+  color: #fff;
+  background-color: #16a085;
+  -webkit-transition: background-color .3s;
+  -moz-transition: background-color .3s;
+  transition: background-color .3s;
+  border: 1px solid #fff;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.send-btn:hover {
+  color: #16a085;
+  -webkit-transition: color .3s;
+  -moz-transition: color .3s;
+  transition: color .3s;
+  border: 1px solid #16a085;
+  background-color: #fff;
+}
+
+  
 
 /******************************************************************
 	Footer
