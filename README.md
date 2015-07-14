@@ -24,7 +24,7 @@ $ bundle exec rackup
 これでローカルでWebサーバーが立ち上がったので、chromeやsafariなどのブラウザから以下のURLで見れます。
 
 ```
-http://localhost:4567
+http://localhost:9292
 ```
 
 ## 編集方法
