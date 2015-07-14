@@ -2,7 +2,7 @@
 
 岡山大学テクノロジーラボのWebサイトは[Sinatra](http://www.sinatrarb.com/)というRubyのWebフレームワークで作られてます。
 
-pull requestを使った開発フローは[こちら](https://www.dropbox.com/s/uy7kxm91lj4fdq9/git-introduction.pdf?dl=0)。
+pull requestを使った開発フローは[こちら](http://www.slideshare.net/totzyuta/git-introduction-50076451)。
 
 
 ## 起動方法
