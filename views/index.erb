@@ -28,8 +28,8 @@ $(function(){
     type: 'error'
   })
 });
-<% end %>
 </script>
+<% end %>
 <!-- Start Menu -->
 	<div class="menubar" data-scroll="true">
     <a href="#"><img src="img/logo-pic.jpg" class="logo"></a>
@@ -43,7 +43,7 @@ $(function(){
 		</ul>
 	</div>
 	<!-- End Menu -->
-	
+
 	<!-- Start Home -->
 	<a class="scroll" id="home"></a>
   <div class="home hero" id="particles-js">
@@ -85,7 +85,7 @@ $(function(){
 メールアドレス： okayama.u.techlab@gmail.com<br><br>
 
 設立2015年3月26日（木）に立ち上げた新しいサークルです！<br>
-現在メンバーは7人<br>
+現在メンバーは17人<br>
 代表：経済学部3年 田上大貴<br>
 共同設立者：工学部3年 戸塚佑太<br><br>
 
@@ -108,7 +108,7 @@ $(function(){
 		<!-- Start Main Paragraph -->
 		<p class="main dark-gray" id="services">岡山大学テクノロジーラボのメンバーたち</p>
 		<!-- Start Main Paragraph -->
-  
+
     <div class="item-wrapper">
 
     <div class="servicesitem">
@@ -150,6 +150,24 @@ $(function(){
       <!-- <a href="#" class="socialicon pinterest"></a> -->
       </p>
     </div>
+
+    <div class="servicesitem">
+      <div class="front" style="background-image: url('img/hyun.jpg');">
+        <div class="icon"></div>
+      </div>
+      <div class="back">
+        <h3 style="font-size: 19px;">"&uarr;いやいや爆発いません。"</h3> </div>
+      <p class="member-introduction">
+      岡山大学テクノロジーラボ 会員<br>
+      岡山大学工学部機械システム系1年<br>
+      勉強中です<br>
+      もともとパソコン好きだったので岡山大学入学後techlabに加入しましたー！まだできることはあまりないんですが、頑張ってprogrammingとかWeb designとか勉強してます<br>
+      <a href="http://facebook.com/k.joonghyun" class="socialicon facebook" target="_blank"></a>
+      <a href="https://twitter.com/JoonghyunK" class="socialicon twitter" target="_blank"></a>
+      <!-- <a href="#" class="socialicon dribbble"></a> -->
+      <!-- <a href="#" class="socialicon pinterest"></a> -->
+      </p>
+    </div>
     </div>
 
 	</div>
@@ -170,10 +188,11 @@ $(function(){
 	<!-- Start Main Paragraph -->
 
 	<ul class="portfoliofilter cf">
-		<li class="filter active" data-filter="design branding illustration">All</li>
+		<li class="filter active" data-filter="design branding illustration 3dprinter">All</li>
     <li class="filter" data-filter="design">Web</li>
     <li class="filter" data-filter="branding">Mobile Apps</li>
     <li class="filter" data-filter="illustration">IoT</li>
+    <li class="filter" data-filter="3dprinter">3D Printer</li>
 	</ul>
 
     <ul class="portfolio cf">
@@ -196,7 +215,7 @@ $(function(){
           </div>
         </li>
       </a>
-      
+
       <a href="http://coffee-note.com/ios/" target="_blank">
         <li class="item branding">
           <div class="portfolioitem">
@@ -209,6 +228,24 @@ $(function(){
                 コーヒーノートは、お気に入りのコーヒーショップや、大好きなカフェでのんだコーヒーを書きとめて、あなただけのノートブックを作っていくアプリです。</h1>
                 <h5>コーヒーノート for iOS</h5>
                 <h6>iOS App<b class="light-gray"> / </b>戸塚佑太</h6>
+              </div>
+            </div>
+          </div>
+        </li>
+      </a>
+
+      <a href="#">
+        <li class="item 3dprinter">
+          <div class="portfolioitem">
+            <img src="img/3dprinter.jpg">
+            <div class="portfoliohover">
+              <div class="info">
+                <h1>
+                  <b>てくらぼストラップ！</b><br><br>
+                  てくらぼのストラップです！<br><br>
+                  3Dプリンターでてくらぼのストラップを作りました！ひもを通す穴つき！</h1>
+                <h5>てくらぼストラップ！</h5>
+                <h6>3D Printer<b class="light-gray"> / </b>こた・あきら</h6>
               </div>
             </div>
           </div>
@@ -259,7 +296,7 @@ $(function(){
 	</ul>
 
 	<!-- End Content -->
-	
+
 	<!-- Start Section Divider -->
 	<div class="section divider">
 		<h2 id="servicestitle">Contact Us</h2>
@@ -273,13 +310,13 @@ $(function(){
 		<!-- Start Main Paragraph -->
     <p class="main dark-gray">お気軽にご連絡ください！</p>
 
-    <form action="/" method="post" class="contact_forms">	
+    <form action="/" method="post" class="contact_forms">
       <label>Name</label><br>
       <input type="text" class="form" name="name"><br>
-      
+
       <label>Email</label><br>
       <input type="text" class="form" name="email"><br>
-      
+
       <label>Message</label><br>
       <textarea rows="3" class="form" name="message"></textarea>
 
@@ -294,13 +331,13 @@ function contactSendButtonPush() {
   var text = document.getElementById('contactSendButton');
   text.innerText = "Sending...";
 }
-</SCRIPT>
+</script>
       <button type="submit" method="post" class="send-btn" id="contactSendButton" onclick="contactSendButtonPush()">Send</button>
     </form>
 
 	</div>
 	<!-- End Content -->
-	
+
 	<footer class="footer">
 		<h6>© Copyright 2015 | 岡山大学テクノロジーラボ</h6>
   </footer>
