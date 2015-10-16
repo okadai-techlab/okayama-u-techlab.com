@@ -1,28 +1,39 @@
-<!doctype html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-<title>岡山大学テクノロジーラボ | 岡山大学テクノロジーラボは、IT技術やデザインに興味のある大学生が集うサークルです</title>
-<link rel="icon" type="img/png" href="img/favicon.png">
-<!-- Load CSS -->
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-<!-- Load Icon Font -->
-<link href="css/webfont.css" rel="stylesheet" type="text/css" />
-<!-- Load jQuery library -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<!-- Load jCarousel js -->
-<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
-<!-- Load MixItUup js -->
-<script type="text/javascript" src="js/jquery.mixitup.js"></script>
-<!-- Load js -->
-<script type="text/javascript" src="js/custom.js"></script>
-</head>
-<!-- Start Body -->
-<body>
-	<!-- Start Menu -->
+<% if @isSuccessSendingEmail %>
+<script type="text/javascript">
+$(function(){
+  PNotify.prototype.options.delay -= 6000;
+
+  new PNotify({
+    title: "メッセージを送信しました",
+    text: "ご連絡ありがとうございます！",
+    nonblock: {
+        nonblock: true,
+        nonblock_opacity: .1
+    },
+    type: 'success'
+  })
+});
+<% elsif @isSuccessSendingEmail == false %>
+<script type="text/javascript">
+$(function(){
+  PNotify.prototype.options.delay -= 6000;
+
+  new PNotify({
+    title: "メッセージを送信できませんでした...",
+    text: "ごめんなさい。。。正しいメールアドレスを入力してください。",
+    nonblock: {
+        nonblock: true,
+        nonblock_opacity: .1
+    },
+    type: 'error'
+  })
+});
+</script>
+<% end %>
+<!-- Start Menu -->
 	<div class="menubar" data-scroll="true">
-    <a href="#"><img src="img/logo.jpg" class="logo"></a>
+    <a href="#"><img src="img/logo-pic.jpg" class="logo"></a>
+    <a href="#"><img src="img/logo-text.jpg" class="logo-text"></a>
 		<ul class="mainmenu">
       <a href="#home"><li class="active">Home</li></a>
       <a href="#about"><li>About</li></a>
@@ -32,7 +43,7 @@
 		</ul>
 	</div>
 	<!-- End Menu -->
-	
+
 	<!-- Start Home -->
 	<a class="scroll" id="home"></a>
   <div class="home hero" id="particles-js">
@@ -74,7 +85,7 @@
 メールアドレス： okayama.u.techlab@gmail.com<br><br>
 
 設立2015年3月26日（木）に立ち上げた新しいサークルです！<br>
-現在メンバーは2人<br>
+現在メンバーは18人<br>
 代表：経済学部3年 田上大貴<br>
 共同設立者：工学部3年 戸塚佑太<br><br>
 
@@ -97,7 +108,7 @@
 		<!-- Start Main Paragraph -->
 		<p class="main dark-gray" id="services">岡山大学テクノロジーラボのメンバーたち</p>
 		<!-- Start Main Paragraph -->
-  
+
     <div class="item-wrapper">
 
     <div class="servicesitem">
@@ -131,10 +142,28 @@
       岡山大学テクノロジーラボ 共同設立者<br>
       岡山大学工学部情報系学科3年<br>
       Web/Mobile Developer<br>
-      岡山大学工学部電気通信系学科に入学後iOSを独学。休学し東アフリカのウガンダで1年間コーヒーの収穫に精を出したのち復学し、情報系学科に転学科。　2014年夏にはCyber Agent、Recruit、Cookpadなどのインターンシップに参加。現在はLife is Tech! Webコースのメンターとして活動しながら岡山県内のWeb制作会社でアルバイトに勤しんでいる。<br>
+      休学し東アフリカのウガンダで1年間コーヒーの収穫に精を出したのち復学し、情報系学科に転学科。　2014年夏にはCyber Agent、Recruit、Cookpad、Life is Tech!などのインターンシップに参加。岡山県内のWeb制作会社でWeb/iOSエンジニアとして働かせていただいたのち、現在は都内のスタートアップにて勤務。<br>
       <a href="https://www.linkedin.com/in/yutatotz" class="socialicon linkedin" target="_blank"></a>
       <a href="http://fb.com/yuta.totsuka424" class="socialicon facebook" target="_blank"></a>
-      <a href="https://twitter.com/totu_iy" class="socialicon twitter" target="_blank"></a>
+      <a href="https://twitter.com/totzyuta" class="socialicon twitter" target="_blank"></a>
+      <!-- <a href="#" class="socialicon dribbble"></a> -->
+      <!-- <a href="#" class="socialicon pinterest"></a> -->
+      </p>
+    </div>
+
+    <div class="servicesitem">
+      <div class="front" style="background-image: url('img/hyun.jpg');">
+        <div class="icon"></div>
+      </div>
+      <div class="back">
+        <h3 style="font-size: 19px;">"休みにはヒッキー！"</h3> </div>
+      <p class="member-introduction">
+      岡山大学テクノロジーラボ 会員<br>
+      岡山大学工学部機械システム系1年<br>
+      勉強中です<br>
+      もともとパソコン好きだったので岡山大学入学後techlabに加入しましたー！まだできることはあまりないんですが、頑張ってprogrammingとかWeb designとか勉強してます<br>
+      <a href="http://facebook.com/k.joonghyun" class="socialicon facebook" target="_blank"></a>
+      <a href="https://twitter.com/JoonghyunK" class="socialicon twitter" target="_blank"></a>
       <!-- <a href="#" class="socialicon dribbble"></a> -->
       <!-- <a href="#" class="socialicon pinterest"></a> -->
       </p>
@@ -159,10 +188,11 @@
 	<!-- Start Main Paragraph -->
 
 	<ul class="portfoliofilter cf">
-		<li class="filter active" data-filter="design branding illustration">All</li>
+		<li class="filter active" data-filter="design branding illustration 3dprinter">All</li>
     <li class="filter" data-filter="design">Web</li>
     <li class="filter" data-filter="branding">Mobile Apps</li>
     <li class="filter" data-filter="illustration">IoT</li>
+    <li class="filter" data-filter="3dprinter">3D Printer</li>
 	</ul>
 
     <ul class="portfolio cf">
@@ -185,7 +215,7 @@
           </div>
         </li>
       </a>
-      
+
       <a href="http://coffee-note.com/ios/" target="_blank">
         <li class="item branding">
           <div class="portfolioitem">
@@ -198,6 +228,24 @@
                 コーヒーノートは、お気に入りのコーヒーショップや、大好きなカフェでのんだコーヒーを書きとめて、あなただけのノートブックを作っていくアプリです。</h1>
                 <h5>コーヒーノート for iOS</h5>
                 <h6>iOS App<b class="light-gray"> / </b>戸塚佑太</h6>
+              </div>
+            </div>
+          </div>
+        </li>
+      </a>
+
+      <a href="#">
+        <li class="item 3dprinter">
+          <div class="portfolioitem">
+            <img src="img/3dprinter.jpg">
+            <div class="portfoliohover">
+              <div class="info">
+                <h1>
+                  <b>てくらぼストラップ！</b><br><br>
+                  てくらぼのストラップです！<br><br>
+                  3Dプリンターでてくらぼのストラップを作りました！ひもを通す穴つき！</h1>
+                <h5>てくらぼストラップ！</h5>
+                <h6>3D Printer<b class="light-gray"> / </b>こた・あきら</h6>
               </div>
             </div>
           </div>
@@ -248,7 +296,7 @@
 	</ul>
 
 	<!-- End Content -->
-	
+
 	<!-- Start Section Divider -->
 	<div class="section divider">
 		<h2 id="servicestitle">Contact Us</h2>
@@ -260,25 +308,36 @@
 	<div class="content contact cf">
 
 		<!-- Start Main Paragraph -->
-		<p class="main dark-gray">お気軽にご連絡ください！</p>
-		<!-- Start Main Paragraph -->
-		
-		<label>Name</label><br>
-		<input type="text" value="" class="form"><br>
-		
-		<label>Email</label><br>
-		<input type="text" value="" class="form"><br>
-		
-		<label>Message</label><br>
-		<textarea rows="3" class="form"></textarea>
+    <p class="main dark-gray">お気軽にご連絡ください！</p>
+
+    <form action="/" method="post" class="contact_forms">
+      <label>Name</label><br>
+      <input type="text" class="form" name="name"><br>
+
+      <label>Email</label><br>
+      <input type="text" class="form" name="email"><br>
+
+      <label>Message</label><br>
+      <textarea rows="3" class="form" name="message"></textarea>
+
+      <script type="text/javascript">
+function SendButtonClick() {
+}
+      </script>
+
+      <script>
+// ボタンの表示を'Send'から'Sending...'に変更
+function contactSendButtonPush() {
+  var text = document.getElementById('contactSendButton');
+  text.innerText = "Sending...";
+}
+</script>
+      <button type="submit" method="post" class="send-btn" id="contactSendButton" onclick="contactSendButtonPush()">Send</button>
+    </form>
 
 	</div>
 	<!-- End Content -->
-	
+
 	<footer class="footer">
 		<h6>© Copyright 2015 | 岡山大学テクノロジーラボ</h6>
-	</footer>
-
-</body>
-<!-- End Body -->
-</html>
+  </footer>
