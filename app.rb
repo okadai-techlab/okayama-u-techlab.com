@@ -57,8 +57,12 @@ post '/' do
     config.token = SLACK_TOKEN
   end
 
-  Slack.chat_postMessage(text: 
-    "てくらぼホームページからメッセージがありました＾＾
-  --------------------
-  "+ message, channel: SLACK_CHANNEL, username: 'OTL HP')
+  slack_text = <<"EOS"
+てくらぼホームページからメッセージがありました＾＾
+返信はメール（okayama.u.techlab@gmail.com）で！！
+--------------------
+#{message}
+EOS
+
+  Slack.chat_postMessage(text: slack_text, channel: SLACK_CHANNEL, username: 'OTL HP')
 end
