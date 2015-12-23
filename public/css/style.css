@@ -759,6 +759,7 @@ li.filter.active {
 }
 ul.portfolio li {
 	width: 25%;
+	height: 251px;
 	float: left;
 	cursor: pointer;
 	display: none;
